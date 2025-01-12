@@ -22,7 +22,7 @@ public class PerformaceController {
 
     @PostMapping("/add-employee")
     public String addEmployee(@RequestBody Employee employee) {
-        // You can call your service method to save the employee data in the database
+       
         performanceAppraisalService.addEmployee(employee);
 
         return "Employee added successfully!";
@@ -30,7 +30,7 @@ public class PerformaceController {
 
     @PutMapping("/update-employee/{id}")
     public String updateEmployee(@PathVariable int id, @RequestBody Employee employee) {
-        // Call the service method to update the employee by ID
+       
         boolean isUpdated = performanceAppraisalService.updateEmployee(id, employee);
         if (isUpdated) {
             return "Employee updated successfully!";
@@ -41,7 +41,7 @@ public class PerformaceController {
 
     @DeleteMapping("/delete-employee/{id}")
     public String deleteEmployee(@PathVariable int id) {
-        // Call the service method to delete the employee by ID
+        
         boolean isDeleted = performanceAppraisalService.deleteEmployee(id);
         if (isDeleted) {
             return "Employee with ID " + id + " deleted successfully!";
