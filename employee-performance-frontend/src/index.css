@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Main page container styles */
+#main-page {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#main-page:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+
+/* Table styles */
+#main-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#main-page th,
+#main-page td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #e5e7eb; /* Border color for cells */
+}
+
+#main-page th {
+  background-color: #f3f4f6; /* Light gray background for header */
+  color: #4b5563; /* Dark text for header */
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+#main-page td {
+  background-color: #ffffff;
+  color: #4b5563; /* Dark text for data */
+  font-size: 0.875rem;
+}
+
+#main-page tbody tr {
+  transition: background-color 0.2s ease-in-out;
+}
+
+#main-page tbody tr:hover {
+  background-color: #f9fafb; /* Light gray background on hover */
+}
+
+/* Empty state message styles */
+#main-page .empty-state {
+  text-align: center;
+  color: #4b5563;
+  font-size: 1rem;
+}
+
+
+/* Deviation Data Section */
+.deviation-data-container {
+  margin-top: 1rem; /* Reduced top margin */
+}
+
+.deviation-data-title {
+  font-size: 1.125rem; /* Slightly smaller font size */
+  font-weight: 500; /* Medium weight */
+  text-align: center;
+  margin-bottom: 0.75rem; /* Reduced bottom margin */
+  color: #4b5563; /* Dark gray text color */
+}
+
+.deviation-item {
+  background-color: #f9fafb; /* Light background */
+  border: 1px solid #e5e7eb; /* Light border */
+  border-radius: 6px; /* Slightly smaller rounded corners */
+  padding: 1rem; /* Reduced padding */
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.deviation-item:hover {
+  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.deviation-item span {
+  display: block; /* Ensure each span is on its own line */
+  margin-bottom: 0.25rem; /* Reduced spacing between elements */
+}
+
+.deviation-item span:first-child {
+  font-size: 1rem; /* Smaller font size for category name */
+  font-weight: 600; /* Bold for category name */
+  color: #2d3748; /* Darker gray for category name */
+}
+
+.deviation-item span:nth-child(2) {
+  font-size: 0.875rem; /* Smaller font size */
+  font-weight: 500;
+  color: #1d4ed8; /* Blue for percentage */
+}
+
+.deviation-item span:nth-child(3) {
+  font-size: 0.75rem; /* Smaller font size for deviation */
+  font-weight: 400;
+  color: #e53e3e; /* Red for deviation */
+}
+
+.deviation-item-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem; /* Reduced space between items */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .deviation-item-container {
+    justify-content: center; /* Center items on smaller screens */
+  }
+}
