@@ -54,7 +54,7 @@ public class PerformanceAppraisalService {
         double standardCategoryDPercentage = ratingCategories.stream().filter(c -> c.getRating().equals("D")).findFirst().get().getStandardPercentage();
         double standardCategoryEPercentage = ratingCategories.stream().filter(c -> c.getRating().equals("E")).findFirst().get().getStandardPercentage();
 
-        // Create a DecimalFormat instance to round to 1 decimal place
+        
         DecimalFormat df = new DecimalFormat("#.0");
 
         String categoryAPercentageFormatted = df.format(categoryAPercentage);
@@ -69,7 +69,7 @@ public class PerformanceAppraisalService {
         double categoryDDeviation = categoryDPercentage - standardCategoryDPercentage;
         double categoryEDeviation = categoryEPercentage - standardCategoryEPercentage;
 
-        // Format deviations to 1 decimal place
+        
         String categoryADeviationFormatted = df.format(categoryADeviation);
         String categoryBDeviationFormatted = df.format(categoryBDeviation);
         String categoryCDeviationFormatted = df.format(categoryCDeviation);
