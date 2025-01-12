@@ -150,27 +150,6 @@ Unit tests are implemented for the core logic, especially for the **deviation ca
 - **Actual Distribution**: This is calculated dynamically based on the employee ratings.
 - A line graph (bell curve) is plotted to compare the actual performance with the standard.
 
-## Sample Data
-
-Here is a sample of employee data used to generate the charts:
-
-| Employee ID | Name  | Rating |
-|-------------|-------|--------|
-| 5001        | Harry | A      |
-| 5002        | Harry | B      |
-| 5003        | Harry | C      |
-| 5004        | Harry | D      |
-| 5005        | Harry | E      |
-
-**Rating Categories (Standard)**:
-
-| Category  | Percentage |
-|-----------|------------|
-| A         | 10%        |
-| B         | 20%        |
-| C         | 40%        |
-| D         | 20%        |
-| E         | 10%        |
 
 ## Extensibility
 
@@ -178,11 +157,7 @@ The system is designed to be easily extensible:
 - New categories can be added without changing the core logic.
 - Additional features like automated email notifications for revision suggestions or a more advanced analytics dashboard can be integrated.
 
-## Future Enhancements
 
-- **Advanced Reporting**: Create downloadable performance reports.
-- **Real-Time Updates**: Implement WebSocket or long-polling for real-time performance updates.
-- **Integration with HR Systems**: Integrate the system with existing HR platforms for smoother data entry and management.
 
 ## License
 
