@@ -28,8 +28,8 @@ The **Employee Performance Appraisal System** calculates and visualizes employee
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/employee-performance-appraisal.git
-   cd employee-performance-appraisal
+   git clone https://github.com/adithyamohanan/employee-performance-appraisal-system.git
+   cd employee-performance-appraisal-backend
    ```
 
 2. **Install Dependencies**:
@@ -56,7 +56,7 @@ The **Employee Performance Appraisal System** calculates and visualizes employee
 
 2. **Clone the Repository** (if separate repository):
    ```bash
-   git clone https://github.com/your-username/employee-performance-frontend.git
+   git clone https://github.com/adithyamohanan/employee-performance-appraisal-system.git
    cd employee-performance-frontend
    ```
 
